@@ -1,0 +1,62 @@
+#contenedorGrande {
+    background-color: lightcyan;
+    width: 100%;
+    height: 100vh; /* Cambié el valor de height a 100vh para ocupar el 100% del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#generador {
+    position: relative;
+    width: 50%;
+    height: 60%;
+    background-color: blue;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#botonEmpezar {
+    -webkit-text-stroke: 0.5px black;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+    float: left;
+    border: 3px solid black;
+    margin-right: 2%;
+    border-radius: 100px;
+    background-color: red;
+    cursor: pointer;
+}
+
+#botonEmpezar:active{
+    background-color: rgb(160, 3, 3);
+}
+
+
+#puntuacion {
+    text-align: center;
+    line-height: 150px;
+    font-size: 90px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    margin-right: 2%;
+    background-color: white;
+    cursor: pointer;
+}
+
+#botones{
+    float: left;
+    margin-right: 5%;
+}
