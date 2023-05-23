@@ -1,10 +1,31 @@
 #contenedorGrande {
     background-color: lightcyan;
     width: 100%;
-    height: 100vh; /* Cambié el valor de height a 100vh para ocupar el 100% del viewport */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; 
+}
+
+#botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#puntuacion {
+    text-align: center;
+    margin-right: 5%;
+    line-height: 150px;
+    font-size: 90px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    margin-bottom: 20px; 
+    background-color: white;
+    cursor: pointer;
 }
 
 #generador {
@@ -39,24 +60,37 @@ body, html {
     cursor: pointer;
 }
 
-#botonEmpezar:active{
+#botonEmpezar:active {
     background-color: rgb(160, 3, 3);
 }
 
-
-#puntuacion {
-    text-align: center;
-    line-height: 150px;
-    font-size: 90px;
-    width: 150px;
-    height: 150px;
-    border: 5px solid black;
-    margin-right: 2%;
-    background-color: white;
-    cursor: pointer;
-}
-
-#botones{
+#botones {
     float: left;
     margin-right: 5%;
 }
+
+@media only screen and (max-width: 600px) {
+    #contenedorGrande {
+        padding: 20px;
+    }
+
+    #botones {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0; 
+    }
+
+    #puntuacion {
+        margin-bottom: 0;
+    }
+
+    #generador {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
